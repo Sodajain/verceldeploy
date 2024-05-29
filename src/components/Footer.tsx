@@ -5,9 +5,9 @@ import {
   InstagramLogo,
   TwitterLogo,
 } from "@phosphor-icons/react/dist/ssr";
-import main_logo from "../../public/main_logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import main_logo from "../../public/main_logo.png";
 
 export default function Footer() {
   return (
@@ -20,10 +20,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 ">
           <div className="text-white  flex flex-col gap-6 px-12  mt-6">
             <p className="text-md">
-              We are not just an accommodation provider, we're a community
-              builder, a technology innovator, and a partner in your educational
-              journey. Our platform bridges the gap between students and
-              landlords, offering a seamless accommodation experience
+            We are more than just a rental broker; 
+            we are your comprehensive end-to-end renting assistant. 
+            From seamless pick-up and drop-off services to meticulous cataloging and coordinated visiting hours,
+            we ensure an optimized and stress-free accommodation experience. 
+            Our platform bridges the gap between tenants and landlords, 
+            making your house-huntingjourney smooth and supported every step of the way.
             </p>
             <div className="flex gap-6">
               <DiscordLogo size={24} weight="fill" className="cursor-pointer" />

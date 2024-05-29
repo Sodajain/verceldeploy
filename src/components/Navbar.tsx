@@ -1,18 +1,13 @@
 "use client";
 
-import Image from "next/image";
-import main_logo from "../../public/main_logo.png";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
   DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
+  DrawerTrigger
 } from "@/components/ui/drawer";
 import {
   NavigationMenu,
@@ -24,6 +19,10 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { List, XCircle } from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image";
+import Link from "next/link";
+import main_logo from "../../public/main_logo.png";
+
 
 function Sidebar() {
   return (
@@ -65,22 +64,31 @@ export default function Navbar() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
+            <Link href={"/about"} legacyBehavior passHref>
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} hover:text-primary focus:bg-none hover:bg-none`}
+              >
+                About us
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
             <NavigationMenuTrigger className="text-sm font-medium">
               Services
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <Link href={"/services/students"} legacyBehavior passHref>
+              <Link href={"/services/lister"} legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navigationMenuTriggerStyle()} hover:text-primary`}
                 >
-                  For Students
+                  For Listing Property
                 </NavigationMenuLink>
               </Link>
-              <Link href={"/services/operators"} legacyBehavior passHref>
+              <Link href={"/services/tenant"} legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navigationMenuTriggerStyle()} hover:text-primary`}
                 >
-                  For Operators
+                  For Searching Property
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuContent>

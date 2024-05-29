@@ -6,20 +6,18 @@ export default function Dashboard() {
       <div className="flex flex-col gap-6 px-6 md:px-24 lg:px-48">
         <div className="flex flex-col gap-2">
           <p className="text-xl font-bold">All under one roof with </p>
-          <p className="text-3xl font-semibold text-primary">HABIIITO APP</p>
+          <p className="text-3xl font-semibold text-primary">HABIIITO </p>
         </div>
 
         <p className="text-sm text-gray-600">
-          An app for both students and landlords, our app simplifies search,
-          management, and communication, ensuring a smooth and efficient housing
-          experience.
+          An app for both landlords , flatmate seekers and tenants. From Search to finalization : All under one roof
         </p>
         <div className="flex gap-2">
           <Button className="w-full bg-background-dark hover:bg-background-dark/80">
-            Admin{" "}
+           <a href="./services/lister">List Property</a>
           </Button>
           <Button className="w-full bg-background-dark hover:bg-background-dark/80">
-            Student
+           <a href="./services/tenant">Seek Property</a> 
           </Button>
         </div>
       </div>
