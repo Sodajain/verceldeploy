@@ -1,6 +1,6 @@
 import { FaFilter, FaHandshake, FaHome } from 'react-icons/fa';
 
-const tenants = () => {
+const tenant = () => {
   return (
     <div className="flex flex-col items-center justify-center py-12">
       <h1 className="text-4xl font-bold text-gray-800 mb-6 text-center">
@@ -45,4 +45,4 @@ const tenants = () => {
   );
 };
 
-export default tenants;
+export default tenant;

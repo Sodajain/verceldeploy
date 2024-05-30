@@ -1,8 +1,16 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import {
+  CloudArrowUp,
+  Envelope,
+  Info,
+  Phone,
+} from "@phosphor-icons/react/dist/ssr";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { Button } from "./ui/button";
 import {
   Form,
   FormControl,
@@ -13,15 +21,6 @@ import {
   FormMessage,
 } from "./ui/form";
 import { Input } from "./ui/input";
-import { Button } from "./ui/button";
-import {
-  CloudArrowUp,
-  Envelope,
-  Info,
-  Phone,
-} from "@phosphor-icons/react/dist/ssr";
-import { useState } from "react";
-import Image from "next/image";
 
 export default function Contact() {
   const [filePreview, setFilePreview] = useState("");
@@ -235,21 +234,21 @@ export default function Contact() {
               <Phone size={24} weight="fill" />
               <div>
                 <p className="text-sm">Phone</p>
-                <p className="text-xs text-primary/75">XXX-XXX-XXXX</p>
+                <p className="text-xs text-primary/75">+91 981 116 2627</p>
               </div>
             </div>
             <div className="flex items-center gap-2">
               <Envelope size={24} weight="fill" />
               <div>
                 <p className="text-sm">Email</p>
-                <p className="text-xs text-primary/75">info@habiiito.com</p>
+                <p className="text-xs text-primary/75">info@habiiito.in</p>
               </div>
             </div>
             <div className="flex items-center gap-2">
               <Info size={24} weight="fill" />
               <div>
                 <p className="text-sm">Helpdesk</p>
-                <p className="text-xs text-primary/75">habiitohelp</p>
+                <p className="text-xs text-primary/75">habiito help</p>
               </div>
             </div>
           </div>

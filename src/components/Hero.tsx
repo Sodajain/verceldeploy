@@ -9,9 +9,9 @@ export default function Hero() {
       <div className="flex flex-col gap-4 order-2 md:order-1 my-12 ">
         <p className="text-2xl font-bold">Gurgaon's most reliable</p>
         <p className="text-4xl text-primary font-semibold">End to end </p>
-        <p className="text-4xl text-primary font-semibold">Renting Assistance</p>
+        <p className="text-4xl text-primary font-semibold">renting assistance</p>
         <p className="text-md">
-         A modern real estate services providing a seamless househunting experience
+        Your full-stack digital platform for a seamless housing rental Experience
         </p>
         <Button
           className="bg-background-dark hover:bg-background-dark/90 rounded-full w-fit px-12"

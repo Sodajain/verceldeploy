@@ -4,7 +4,7 @@ import furniture_solution from "../../../../public/furniture_solution.png";
 import housing_solution from "../../../../public/housing_solution.png";
 import support_solution from "../../../../public/support_solution.png";
 
-export default function StudentService() {
+export default function lister() {
   return (
     <main className="">
       <div className="flex flex-col items-center justify-center text-center gap-8 mt-12 px-12">

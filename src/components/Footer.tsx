@@ -20,12 +20,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 ">
           <div className="text-white  flex flex-col gap-6 px-12  mt-6">
             <p className="text-md">
-            We are more than just a rental broker; 
-            we are your comprehensive end-to-end renting assistant. 
-            From seamless pick-up and drop-off services to meticulous cataloging and coordinated visiting hours,
-            we ensure an optimized and stress-free accommodation experience. 
-            Our platform bridges the gap between tenants and landlords, 
-            making your house-huntingjourney smooth and supported every step of the way.
+            Welcome to your new city adventure! 🎉 Need help finding the perfect place to call home? Look no further! We're your friendly renting buddy, here to make the house-hunting journey a breeze.
+
+From seamless pick-up and drop-off services to stress-free visits, we've got you covered. Think of us as your ultimate support system, bridging the gap between tenants and landlords with ease.
+
+So, whether you're new in town or a seasoned renter, let's team up and make your renting experience unforgettable! 🏡
             </p>
             <div className="flex gap-6">
               <DiscordLogo size={24} weight="fill" className="cursor-pointer" />
@@ -42,7 +41,7 @@ export default function Footer() {
               <TwitterLogo size={24} weight="fill" className="cursor-pointer" />
             </div>
             <p className="text-sm text-gray-500">
-              help@habiiito.com | DLF Cyberpark, Gurugram, 122008
+              info@habiiito.in| DLF Cyberpark, Gurugram, 122008
             </p>
           </div>
           <div className="text-white text-md flex flex-col gap-6 px-12  mt-6">
@@ -57,7 +56,7 @@ export default function Footer() {
             </div>
             <div className="cursor-pointer flex items-center gap-2">
               <CaretRight size={12} />
-              <Link href={"#"}>Supprt</Link>
+              <Link href={"#"}>Support</Link>
             </div>
           </div>
         </div>
