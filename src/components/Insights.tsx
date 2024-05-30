@@ -12,7 +12,7 @@ export default function Insights() {
         <p className="text-center text-xl md:text-2xl font-bold">
           Making your househunt smoother
         </p>
-        <div className="flex justify-center bg-gray-600 rounded-3xl py-6 px-2 md:px-12  max-w-[100%]">
+        <div className="flex justify-center bg-gray-600 rounded-3xl py-6 px-2 md:px-12  max-w-[100%] transition-all duration-300 transform hover:scale-105">
           <div className="text-center pr-6 md:pr-12 border-r-2">
             <p className="text-2xl md:text-4xl font-bold text-[#52D7D7]">20+</p>
             <p className="text-sm md:text-md ">Landlord Connects</p>

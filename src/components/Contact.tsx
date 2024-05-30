@@ -224,7 +224,7 @@ export default function Contact() {
                 <FormMessage />
               </FormItem>
 
-              <Button type="submit" className="w-full ">
+              <Button type="submit" className="w-full transition-all duration-300 transform hover:scale-105 ">
                 Submit
               </Button>
             </form>

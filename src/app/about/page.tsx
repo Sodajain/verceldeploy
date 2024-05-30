@@ -1,75 +1,53 @@
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import { FaGlobe } from 'react-icons/fa';
 import founders from "../../../public/2-1.png";
 
 export default function About() {
   return (
     <main className="px-8 py-12">
-      <div className="flex flex-col items-center justify-center text-center gap-8 mb-12">
+      <div className="flex flex-col items-center justify-center text-center mb-12">
         <p className="text-5xl font-bold">
-          We are <span className="text-primary">Habiiito</span>
+          We are <span className="text-primary transition-all duration-300 transform hover:scale-105">Habiiito</span>
         </p>
-        <Badge variant={"success"} className="text-sm">
-          Your Full-Stack Digital Platform for a Seamless Housing Rental Experience
+        <Badge variant={"success"} className="text-sm mt-4 transition-all duration-300 transform hover:scale-105">
+          Your Full-Stack Digital Platform for Seamless Housing Rental
         </Badge>
       </div>
 
-      <div className="max-w-3xl mx-auto mb-12">
-        <p className="text-md text-gray-700">
-          Habiiito is revolutionizing the housing rental landscape by addressing the crucial pain points faced by
-          renters and property owners alike. With a comprehensive ecosystem for seamless rental management, Habiiito is
-          dedicated to improving the quality, accessibility, and management of rental properties. Our vision is to
-          create a world where everyone has access to comfortable, safe, and supportive living spaces that enhance
-          their overall well-being.
+      <div className="max-w-3xl mx-auto mb-12 bg-gray-100 p-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+        <p className="text-gray-700">
+          Habiiito revolutionizes housing rentals by addressing key pain points for renters and owners.
+           We offer an ecosystem for seamless management, aiming for comfortable, safe, and supportive living spaces.
         </p>
       </div>
 
-      <div className="mb-12">
-        
-        <p className="text-xl font-semibold mb-8">
-          Transforming housing rental experiences while streamlining operational efficiencies
-        </p>
-        <div className="grid grid-cols-1 gap-8 items-center">
-         
-          <div>
-            <p className="text-md text-gray-700">
-              We identified a significant gap in the housing rental sector and set out to solve it with innovative,
-              technology-driven solutions. Our goal is to ensure that rental properties are more than just places to
-              stay—they are communities where people thrive. With Habiiito, you can enjoy a seamless end-to-end rental
-              experience, from finding the perfect property to managing your stay with our dedicated support services.
-            </p>
-          </div>
-        </div>
-      </div>
-  
-      <div className="mb-12">
-        <p className="text-lg text-primary font-bold mb-4">End-to-End Rental Services</p>
-        <div className="grid grid-cols-1 gap-8">
-          <div>
-            <p className="text-md text-gray-700 mb-4">
-              At Habiiito, we offer a comprehensive suite of rental services to ensure a hassle-free experience for
-              both renters and property owners. From listing and marketing your property to tenant screening and
-              property management, we've got you covered.
-            </p>
-            <p className="text-md text-gray-700">
-              Our dedicated team is available 24/7 to assist you with any queries or concerns, ensuring a smooth and
-              enjoyable rental journey. We also provide convenient pick-up and drop-off services, making your move-in
-              and move-out process a breeze.
-            </p>
-          </div>
-        </div>
+      <div className="mb-12 bg-gray-100 p-6 rounded-lg">
+        <p className="text-xl font-semibold mb-6">Transforming Rental Experiences</p>
+        <div className="grid grid-cols-1 gap-6">
+          <div className="flex items-center transition-all duration-300 transform hover:scale-105">
+            <FaGlobe className="text-3xl text-primary mr-4" />
             <div>
-      <p className="text-lg text-primary font-bold mb-4">Our Founders</p>
-        <div className="flex justify-center">
-            <Image
-              src={founders}
-              alt="Founders"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
+              <p className="text-gray-700 mb-2">
+                Comprehensive suite of rental services for both renters and owners, including listing, marketing, tenant screening, and property management.
+              </p>
+              <p className="text-gray-700">
+                24/7 dedicated support team for seamless rental journeys, with convenient pick-up and drop-off services.
+              </p>
+            </div>
           </div>
-          </div>
+        </div>
       </div>
+
+      <div className="flex justify-center">
+        <Image
+          src={founders}
+          alt="Founders"
+          className="rounded-lg shadow-lg"
+        />
+      </div>
+
       <Footer/>
     </main>
   );

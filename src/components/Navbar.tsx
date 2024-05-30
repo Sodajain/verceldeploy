@@ -96,9 +96,9 @@ export default function Navbar() {
     <nav className="flex justify-between items-center px-6 py-4 bg-white shadow-md">
       <Link href={"/"} className="flex items-center gap-2">
         <Image src={main_logo} alt="logo" width={36} height={36} unoptimized />
-        <p className="text-primary font-bold ">Habiiito</p>
+        <p className="text-primary font-bold transition-all duration-300 transform hover:scale-105 ">Habiiito</p>
       </Link>
-      <NavigationMenu className="hidden md:flex">
+      <NavigationMenu className="hidden md:flex transition-all duration-300 transform hover:scale-105">
         <NavigationMenuList className="flex gap-4">
           <NavigationMenuItem>
             <Link href={"/"} legacyBehavior passHref>
