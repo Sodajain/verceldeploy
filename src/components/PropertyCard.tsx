@@ -1,13 +1,14 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface Property {
   id: string;
-  imageUrl: string;
+  imageUrl: StaticImageData;
   name: string;
   location: string;
   rent: number;
   flatmates: number;
 }
+
 
 interface PropertyCardProps {
   property: Property;
