@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import dealdonegirls from '../../public/dealdonegirls.png';
+import dealdonegirls from '../../public/Dealdonegirls.png';
 import houseinspect from '../../public/houseinspect.png';
 import houseinspected from '../../public/houseinspected.png';
 
