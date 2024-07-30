@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Habiiito",
   description:
-    "A modern real estate services providing colleges with hostel and related solutions",
+    "A full-stack platform designed to revolutionise the rental housing market. We provide a seamless, trustworthy, and lifestyle based renting experience.",
 };
 
 export default function RootLayout({
