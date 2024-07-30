@@ -24,7 +24,38 @@ export default function ExploreArea() {
 
     return (
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-10">
-            {/* ... (rest of the code remains the same) ... */}
+           <div className="text-center mb-8">
+                <p className="text-2xl md:text-3xl text-[#FF2C61] font-bold">Explore the Area</p>
+                <p className="text-gray-600">Discover handpicked properties in your desired location</p>
+            </div>
+            
+            {/* Categories */}
+            <div className="flex flex-wrap justify-center gap-2 mb-6">
+                {['1 BHK', '2 BHK', '3 BHK', '4 BHK', 'Co-living', 'Pre-occupied', 'Gated Society', '1 RK'].map((category, index) => (
+                    <p key={index} className='text-[#FF2C61] border-2 border-[#FF2C61] rounded-full px-3 py-1 text-xs md:text-sm'>{category}</p>
+                ))}
+            </div>
+            
+            {/* Image Carousel */}
+            <div className="relative overflow-hidden mb-8">
+                <div className="flex h-[200px] md:h-[250px] lg:h-[300px] w-full space-x-4 overflow-x-scroll snap-x snap-mandatory scrollbar-hide">
+                    {repeatedImages.map((image, index) => (
+                        <div key={index} className="flex-shrink-0 snap-center">
+                            <div className="relative w-[200px] h-[200px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px] bg-white border border-white rounded-full overflow-hidden">
+                                <div className="absolute inset-0">
+                                    <Image
+                                        src={image}
+                                        alt={`Location ${index + 1}`}
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="rounded-full"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
 
             {/* Bottom Cards */}
             <div className="flex justify-center">
@@ -78,7 +109,6 @@ export default function ExploreArea() {
                                 className="rounded-md"
                             />
                         </div>
-                        <div className="w-full md:w-1/2 h-24 md:h-full bg-gray-200 rounded-md mt-4 md:mt-0"></div>
                     </div>
                 </div>
             </div>
