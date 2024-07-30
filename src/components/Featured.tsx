@@ -5,10 +5,11 @@ import prop2 from "../../public/24.5k_sec51mayfield.png";
 import prop4 from "../../public/DLFp4_22500furnished.png";
 import prop3 from "../../public/esselmgroad_21000.png";
 import PropertyCard from "./PropertyCard";
+import { StaticImageData } from 'next/image';
 
 interface Property {
   id: string;
-  imageUrl: string;
+  imageUrl: StaticImageData;
   name: string;
   location: string;
   rent: number;
