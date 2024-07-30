@@ -1,32 +1,25 @@
 import {
-  CaretRight,
   DiscordLogo,
   FacebookLogo,
   InstagramLogo,
-  TwitterLogo,
+  TwitterLogo
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
-import Link from "next/link";
 import main_logo from "../../public/main_logo.png";
 
 export default function Footer() {
   return (
     <>
-      <footer className="bg-background-dark py-12 md:px-24 mt-24">
-        <div className="flex items-center gap-6 px-12 ">
-          <Image src={main_logo} alt="logo" width={48} height={48} />
-          <p className="text-white text-xl">Habiiito</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 ">
-          <div className="text-white  flex flex-col gap-6 px-12  mt-6">
-            <p className="text-md">
-            Welcome to your new city adventure! 🎉 Need help finding the perfect place to call home? Look no further! We're your friendly renting buddy, here to make the house-hunting journey a breeze.
-
-From seamless pick-up and drop-off services to stress-free visits, we've got you covered. Think of us as your ultimate support system, bridging the gap between tenants and landlords with ease.
-
-So, whether you're new in town or a seasoned renter, let's team up and make your renting experience unforgettable! 🏡
+      <footer className="bg-gray-100 py-12 md:px-24 mt-24">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="text-black flex flex-col gap-6 px-12 py-6">
+            <Image src={main_logo} alt="logo" width={100} height={80} />
+      
+           
+            <p>
+              Habiiito is a full-stack digital platform designed to revolutionise the rental housing market. We provide a seamless, trustworthy, and efficient rental experience by offering verified property listings, lifestyle-based filters, and comprehensive end-to-end services.
             </p>
-            <div className="flex gap-6">
+            <div className="flex gap-6 mt-6">
               <DiscordLogo size={24} weight="fill" className="cursor-pointer" />
               <InstagramLogo
                 size={24}
@@ -41,23 +34,19 @@ So, whether you're new in town or a seasoned renter, let's team up and make your
               <TwitterLogo size={24} weight="fill" className="cursor-pointer" />
             </div>
             <p className="text-sm text-gray-500">
-              info@habiiito.in| DLF Cyberpark, Gurugram, 122008
+              info@habiiito.in | DLF Cyberpark, Gurugram, 122008
             </p>
           </div>
-          <div className="text-white text-md flex flex-col gap-6 px-12  mt-6">
-            <p className="text-lg font-bold">Explore</p>
-            <div className="cursor-pointer flex items-center gap-2">
-              <CaretRight size={12} />
-              <Link href={"#"}>Services</Link>
+          <div className="text-black flex flex-col gap-6 px-12 py-6">
+            <div className="border-t border-gray-600">
+              <p className="text-lg font-bold">Find a Flatmate</p>
+              <p>Gurgaon | Mumbai | Delhi</p>
             </div>
-            <div className="cursor-pointer flex items-center gap-2">
-              <CaretRight size={12} />
-              <Link href={"#"}>Teams</Link>
+            <div className="border-t border-gray-600">
+              <p className="text-lg font-bold">Find Your Home</p>
+              <p>Gurgaon | Mumbai | Delhi</p>
             </div>
-            <div className="cursor-pointer flex items-center gap-2">
-              <CaretRight size={12} />
-              <Link href={"#"}>Support</Link>
-            </div>
+          
           </div>
         </div>
       </footer>
