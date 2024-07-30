@@ -22,7 +22,7 @@ export default function Featured() {
       id: 'Villas',
       imageUrl: prop1,
       name: 'Room in 4BHK',
-      location: 'The Residency, Ardee City, Sector 54',
+      location: 'The Residency, Sector 54',
       rent: 18000,
       flatmates: 3,
     },
